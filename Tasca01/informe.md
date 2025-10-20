@@ -5,6 +5,7 @@
 
 - Un gestor de contrasenyes ajuda a crear i guardar contrasenyes fortes i úniques per a cada compte, evitant que els hackers puguin accedir fàcilment a la informació de l’empresa.
 
+![Inicio de sesion](img/informe_img/image1.png)
 
 ## Comparativa Tècnica
 | Característica              | **Bitwarden** | **KeePassXC** |
@@ -14,7 +15,8 @@
 | **Accés des de múltiples dispositius** | Accés fàcil des de qualsevol dispositiu amb connexió a Internet. | Accés des de dispositius locals mitjançant el fitxer .kdbx; no requereix connexió a Internet. |
 | **Cost / Model freemium**   | Pla gratuït amb funcions bàsiques; pla Premium per 10 $/any amb funcions addicionals. | Totalment gratuït; no hi ha versió Premium. |
 
-
+![Bitwarden](img/informe_img/image2.png) 
+![Inicio de sesion](img/informe_img/image3.png)
 ### KeePassX / KeePassXC
 ### Emmagatzematge local de l'arxiu (KDBX)
 KeePassXC guarda totes les contrasenyes en un fitxer local amb extensió .kdbx. Aquest fitxer està xifrat amb AES-256, garantint la seguretat de la informació. Només es necessita aquest fitxer i la contrasenya mestre per accedir a les credencials. Tot queda al teu ordinador sense dependre de cap servidor extern.
