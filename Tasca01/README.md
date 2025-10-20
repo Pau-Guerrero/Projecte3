@@ -6,6 +6,7 @@ Aquesta tasca forma part del projecte 3 i té com a objectiu abordar la segureta
 
 L’escenari plantejat és el següent: la consultora on treballa l’alumne ha patit un atac informàtic que ha exposat informació sensible, principalment a causa de l’ús de contrasenyes febles o repetides en comptes tècnics. Com a resposta, la Direcció Tècnica ha decidit implementar l’ús obligatori d’un **gestor de contrasenyes** per tot el personal tècnic.
 
+![Imatge de un noi iniciant sesio](img/README_img/image1.png)
 ## Objectius de la Tasca
 
 La tasca es divideix en dues fases principals:
