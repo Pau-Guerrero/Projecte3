@@ -46,5 +46,7 @@ Els gestors **offline**, en canvi, depenen de les còpies locals; si es perd el 
 
 
 ## Recomanació
-- Concloeu l'informe escollint l'eina que considereu més adequada per al personal tècnic de l'empresa i justifiqueu la vostra elecció.
-
+Penso que Bitwarden és l'opció més adequada per a l'equip tècnic de l'organització.
+Dona seguretat, conveniència i usabilitat. La sincronització automàtica entre dispositius fa que en qualsevol lloc no hi hagui risc de perdre informació.
+La seva encriptació d'extrem a extrem assegura la protecció de les contrasenyes i minimitza la possibilitat d'errors dels usuaris.
+Per aquestes raons, Bitwarden és la selecció més adequada per assegurar la protecció i eficàcia a l'empresa.
