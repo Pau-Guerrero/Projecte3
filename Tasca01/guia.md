@@ -37,3 +37,10 @@ Bitwarden emplenarà automàticament l’usuari i la contrasenya al formulari.
 
 ![credencials ](img/guia_img/image16.png)
 
+## GESTIÓ DE COPIES DE SEGURETAT
+Per fer una còpia de seguretat de les nostres contrasenyes, primer hem d’accedir a la web de Bitwarden i iniciar sessió amb el nostre compte.  
+Un cop dins, hem d’anar a la secció Eines.  
+Dins d’Eines, seleccionarem l’opció Exporta la bústia, que ens permet descarregar totes les credencials.  
+
+![exportar credencialos ](img/guia_img/image22.png) ![exportar credencialos ](img/guia_img/image23.png)
+
