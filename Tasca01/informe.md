@@ -32,10 +32,18 @@ El fitxer .kdbx es pot copiar fàcilment a USB o altres dispositius, permetent p
 
 
 ## Avantatges i Inconvenients
-- Resumiu els principals pros i contres de cada model (online vs. offline) des del punt de vista de:
-  - Seguretat
-  - Usabilitat
-  - Continuïtat del negoci
+### Seguretat
+Els gestors **online** com Bitwarden ofereixen xifratge de punta a punta i còpies automàtiques al núvol, però depenen d’Internet i d’un servidor extern.  
+Els gestors **offline** com KeePassXC guarden les contrasenyes al teu dispositiu, donant més control i privacitat, però requereixen fer les còpies de seguretat manualment.
+
+### Usabilitat
+Els gestors **online** són més còmodes, ja que permeten accedir fàcilment des de qualsevol dispositiu i sincronitzar tot automàticament.  
+En canvi, els gestors **offline** necessiten moure el fitxer manualment entre dispositius, cosa que pot ser menys pràctica per a l’usuari.
+
+### Continuïtat del negoci
+Els gestors **online** asseguren que el personal pugui recuperar l’accés ràpidament en cas de pèrdua d’un dispositiu, gràcies a la sincronització al núvol.  
+Els gestors **offline**, en canvi, depenen de les còpies locals; si es perd el fitxer o no es fan còpies, es poden perdre totes les contrasenyes.
+
 
 ## Recomanació
 - Concloeu l'informe escollint l'eina que considereu més adequada per al personal tècnic de l'empresa i justifiqueu la vostra elecció.
