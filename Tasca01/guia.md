@@ -24,3 +24,6 @@ Evita paraules fàcils de recordar o comunes, que els hackers endevinen ràpid.
 Cliquem generar i guarda-la directament al compte que estàs creant.
 
 ## EXEMPLE D'ÚS I EMPLENAMENT AUTOMÀTIC
+Per desa una credencial d'un compte de correu electronic em de anar al més (+) que hi ha abaix, i entre les opcions elegir inicia sesió i en alla ompli les nostres dades
+
+![credencials ](img/guia_img/image16.png)
