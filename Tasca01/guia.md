@@ -44,3 +44,8 @@ Dins d’Eines, seleccionarem l’opció Exporta la bústia, que ens permet desc
 
 ![exportar credencialos ](img/guia_img/image22.png) ![exportar credencialos ](img/guia_img/image23.png)
 
+
+La millor pràctica és guardar la còpia de seguretat de les contrasenyes en un lloc totalment segur.  
+Es recomana utilitzar un USB xifrat o un servei de núvol amb xifratge, assegurant que només tu tinguis accés a la contrasenya mestre.  
+D’aquesta manera, encara que el dispositiu o el núvol es perdi o sigui hackejat, les teves contrasenyes continuaran protegides.  
+Sempre és important no deixar la còpia de seguretat desprotegida ni compartir-la amb altres persones.
