@@ -11,7 +11,7 @@
 | Característica              | **Bitwarden** | **KeePassXC** |
 |-----------------------------|---------------|---------------|
 | **Sincronització**          | Sincronització automàtica al núvol entre dispositius. | No té sincronització automàtica; requereix còpies manuals del fitxer .kdbx entre dispositius. |
-| **Model de seguretat**      | Xifratge de punta a punta amb AES-256 i arquitectura de coneixement nul. | 🔐 Emmagatzematge local xifrat amb AES-256; el fitxer .kdbx es pot emmagatzemar en qualsevol ubicació, també a núvols privats. |
+| **Model de seguretat**      | Xifratge de punta a punta amb AES-256 i arquitectura de coneixement nul. | Emmagatzematge local xifrat amb AES-256; el fitxer .kdbx es pot emmagatzemar en qualsevol ubicació, també a núvols privats. |
 | **Accés des de múltiples dispositius** | Accés fàcil des de qualsevol dispositiu amb connexió a Internet. | Accés des de dispositius locals mitjançant el fitxer .kdbx; no requereix connexió a Internet. |
 | **Cost / Model freemium**   | Pla gratuït amb funcions bàsiques; pla Premium per 10 $/any amb funcions addicionals. | Totalment gratuït; no hi ha versió Premium. |
 
