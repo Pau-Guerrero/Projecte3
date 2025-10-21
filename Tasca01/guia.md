@@ -30,10 +30,10 @@ Per desa una credencial d'un compte de correu electronic em de anar al més (+) 
 
 -
 
-Per instal.lar la extensió hem de anar a la tenda de chroma i alla instalar-ho.
-
-![credencials ](img/guia_img/image16.png)
 Per utilitzar l’extensió de Bitwarden al navegador, primer instal·la-la i inicia sessió amb el teu compte mestre.
 Quan accedeixis a una web, fes clic a la icona de Bitwarden a la barra del navegador.
 Selecciona la credencial corresponent del menú que apareix.
 Bitwarden emplenarà automàticament l’usuari i la contrasenya al formulari.
+
+![credencials ](img/guia_img/image16.png)
+
