@@ -1,18 +1,26 @@
-per instal.lar bitwarden anem a google y entrem a la pagina oficial de bitwarden, en alla la descargarem 
+# GUIA T01
+## INSTAL.LACIÓ I CONFIGURACIÓ
+Per instal·lar Bitwarden, anem a Google i entrem a la pàgina oficial de Bitwarden.  
+Allà descarregarem la versió corresponent.
 
-![Descrgar bitwarden](img/guia_img/image1.png)
+![Descarregar Bitwarden](img/guia_img/image1.png)
 
+Un cop descarregat, seguirem els passos de la instal·lació fins acabar el procés.
 
-En alla seguirem els pasos de la instalacio
+![Instal·lació Bitwarden](img/guia_img/image2.png) ![Instal·lació Bitwarden](img/guia_img/image3.png)
 
-![Descrgar bitwarden](img/guia_img/image2.png)![Descrgar bitwarden](img/guia_img/image3.png)
+Ara ja podem crear un compte a Bitwarden introduint les nostres dades i escollint una contrasenya segura.
 
+![Crear compte Bitwarden](img/guia_img/image9.png) ![Crear compte Bitwarden](img/guia_img/image10.png)
 
-Ara crearem una conta a bitwarden
-
-![Descrgar bitwarden](img/guia_img/image9.png) ![Descrgar bitwarden](img/guia_img/image10.png)
-
-# GENERACIÓ DE CONTRASENYAS
+## GENERACIÓ DE CONTRASENYAS
 Per generar una contrasenya anirem a la aplicació y en les opcions de adalt anirem a mostra i generador y en alla ja estarem dins del generador de contrasenya.
 
-![Generador de contrasenya](img/guia_img/image13.png) ![Generador de contrasenya](img/guia_img/image14.png) ![Generador de contrasenya](img/guia_img/image15.png)
+![Generador de contrasenya](img/guia_img/image13.png)
+
+Per fer una contrasenya segura a Bitwarden, obre el generador a l’app o al navegador.
+Tria una longitud llarga i activa majúscules, números i símbols.
+Evita paraules fàcils de recordar o comunes, que els hackers endevinen ràpid.
+Cliquem generar i guarda-la directament al compte que estàs creant.
+
+## EXEMPLE D'ÚS I EMPLENAMENT AUTOMÀTIC
