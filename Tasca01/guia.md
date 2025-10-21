@@ -26,4 +26,14 @@ Cliquem generar i guarda-la directament al compte que estàs creant.
 ## EXEMPLE D'ÚS I EMPLENAMENT AUTOMÀTIC
 Per desa una credencial d'un compte de correu electronic em de anar al més (+) que hi ha abaix, i entre les opcions elegir inicia sesió i en alla ompli les nostres dades
 
-![credencials ](img/guia_img/image16.png)
+![credencials ](img/guia_img/image11.png)
+
+-
+
+Per instal.lar la extensió hem de anar a la tenda de chroma i alla instalar-ho.
+
+![credencials ](img/guia_img/image15.png)
+Per utilitzar l’extensió de Bitwarden al navegador, primer instal·la-la i inicia sessió amb el teu compte mestre.
+Quan accedeixis a una web, fes clic a la icona de Bitwarden a la barra del navegador.
+Selecciona la credencial corresponent del menú que apareix.
+Bitwarden emplenarà automàticament l’usuari i la contrasenya al formulari.
