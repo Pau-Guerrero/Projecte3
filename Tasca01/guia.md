@@ -10,4 +10,4 @@ En alla seguirem els pasos de la instalacio
 
 Ara crearem una conta a bitwarden
 
-![Descrgar bitwarden](img/guia_img/image4.png)![Descrgar bitwarden](img/guia_img/image5.png)
+![Descrgar bitwarden](img/guia_img/image4.png) ![Descrgar bitwarden](img/guia_img/image5.png)
