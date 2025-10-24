@@ -6,6 +6,8 @@ Innovatech té problemes de gestió d'usuaris i accessos perquè cada servei i c
 - **Risc de seguretat:** Els usuaris reutilitzen contrasenyes entre serveis.
 - **Manca d’escalabilitat:** Afegir nous serveis és complicat.
 
+![](img/README.png)
+
 ## Solució proposada
 S’ha decidit implementar **OpenLDAP** per centralitzar l’autenticació i la gestió d’usuaris. OpenLDAP és:
 - De codi obert.
