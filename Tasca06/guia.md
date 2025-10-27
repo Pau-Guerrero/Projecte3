@@ -4,7 +4,7 @@
 **Resultat observat:**  
 No hi ha IP a la resposta, la secció ANSWER està buida. L’estat és NXDOMAIN, el que significa que el domini no es pot resoldre. El servidor que ha respost és 127.0.0.53 (DNS local). No apareix TTL perquè no hi ha registre A.
 
-**Explicació senzilla:**  
+**Explicació:**  
 Aquesta consulta buscava l’adreça IP del domini xtec.cat. Com que no hi ha un registre A, el sistema no pot donar una IP. Això pot ser perquè el domini no existeix, està mal escrit o no té configurat un registre A.
 
 **Conclusió:**  
@@ -24,7 +24,7 @@ Servidors autoritatius:
 
 Tots aquests servidors són d’Amazon Web Services (AWS).
 
-**Explicació senzilla:**  
+**Explicació:**  
 Aquests servidors contenen la informació oficial del domini tecnocampus.cat. Quan algú consulta aquest domini, aquests servidors responen amb la informació correcta. El fet que siguin d’AWS indica que el domini fa servir la infraestructura d’Amazon per al seu DNS.
 
 **Conclusió:**  
@@ -40,7 +40,7 @@ Els servidors autoritatius són els responsables de gestionar les dades del domi
 - Número de sèrie: 1761028965  
 - Servidor principal: dns1.nominalia.com
 
-**Explicació senzilla:**  
+**Explicació:**  
 El registre SOA indica qui administra el domini i com es controlen els canvis. El correu mostra el responsable tècnic, i el número de sèrie permet saber si s’han fet modificacions recents a la configuració del DNS.
 
 **Conclusió:**  
@@ -59,7 +59,7 @@ La IP està associada a diversos noms:
 - masters.upc.edu  
 - saladeprensa.upc.edu
 
-**Explicació senzilla:**  
+**Explicació:**  
 Aquesta consulta inversa busca el nom de domini que correspon a una IP. Veiem que aquesta IP pertany a la Universitat Politècnica de Catalunya (UPC) i està vinculada a diversos subdominis.
 
 **Conclusió:**  
@@ -74,7 +74,7 @@ La IP no pertany a un sol domini, sinó que s’usa per a diversos serveis dins 
 - IP de Wikipedia: 185.15.58.224  
 - Resposta no autoritativa, ja que prové de la memòria cau del servidor local.
 
-**Explicació senzilla:**  
+**Explicació:**  
 El resultat dóna la IP del domini, però no prové directament del servidor oficial, sinó d’un servidor intermedi que guardava la informació en memòria. Això és normal i ràpid, encara que no és la font original.
 
 **Conclusió:**  
