@@ -28,7 +28,6 @@ Per desa una credencial d'un compte de correu electronic em de anar al més (+) 
 
 ![credencials ](img/guia_img/image11.png)
 
--
 
 Per utilitzar l’extensió de Bitwarden al navegador, primer instal·la-la i inicia sessió amb el teu compte mestre.
 Quan accedeixis a una web, fes clic a la icona de Bitwarden a la barra del navegador.
