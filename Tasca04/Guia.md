@@ -43,3 +43,37 @@ Per configurar el domini, entrarem com a root amb la comanda sudo su i després 
 I per comprovar-ho, executarem la comanda slapcat mentre estem com a root.  
 
 ![](img/image13.png)
+
+# LDAP UTILS
+Es mostra un terminal on s’executa la comanda:
+sudo nano OU_users.ldif
+El sistema demana la contrasenya de l’usuari per obrir el fitxer LDIF amb privilegis de superusuari. Aquest fitxer contindrà la definició de la unitat organitzativa (OU) per LDAP.
+
+![](img/image14.png)
+
+Comanda executada:
+ldapadd -D "cn=admin,dc=innovatech09,dc=test" -W -f OU_users.ldif
+Es demana la contrasenya LDAP i es confirma l’addició de la nova entrada:
+"ou=Usuaris,dc=innovatech09,dc=test"
+Aquest pas afegeix la unitat organitzativa definida al fitxer LDIF dins del directori LDAP.
+
+![](img/image15.png)
+
+Comanda executada:
+ldapsearch -xLLL -b "dc=innovatech09,dc=test"
+Resultat:
+- Mostra l’estructura del domini LDAP.
+- Inclou el DN principal (dc=innovatech09,dc=test) i la unitat organitzativa (ou=Usuaris).
+- Es llisten les classes d’objecte: top, dcObject, organization i organizationalUnit.
+Aquesta comanda verifica que la OU s’ha creat correctament.
+
+![](img/image16.png)
+
+Contingut del fitxer OU_users.ldif en l’editor nano:
+dn: ou=Usuaris,dc=innovatech09,dc=test
+ou: Usuaris
+objectClass: top
+objectClass: organizationalUnit
+Aquest fitxer defineix la unitat organitzativa "Usuaris" dins del domini LDAP.
+
+![](img/image17.png)
