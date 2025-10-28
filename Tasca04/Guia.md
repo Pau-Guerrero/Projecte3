@@ -60,3 +60,11 @@ Aqui posarem la comanda de ldapadd -D "cn=admin,dc=innovatech09,dc=test" -W -f O
 Aqui posarem la comanda de ldapsearch -xLLL -b "dc=innovatech09,dc=test" uid=* sn givenName mail, aquesta comanda fa una cerca dins del directori LDAP i mostra els camps uid, sn, givenName i mail dels usuaris existents per assegurar-nos que la informació s’ha carregat correctament.
 
 ![](img/image17.png)
+
+# LDAP ACCOUNT MANAGER
+Primer de tot instal.larem el paquet del gestor LDAP account manager
+
+![](img/image18.png)
+
+
+
