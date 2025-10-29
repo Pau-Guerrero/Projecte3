@@ -70,11 +70,51 @@ Si escrivim al navegador http://(la nostra IP)/lam, accedirem a la pàgina princ
 
 ![](img/image19.png)
 
-El primer que configurem sera el LAM, per això anirem adalt a la detra, que ens sortira una opcio q diu configuracio de lam, una vegada hem clicat ens sortira un menu, en alla elegirem la opcio de editar perfiles del servidor
+Pero abans de inicia sessió configurarem el LAM. Per això, anirem a la part superior dreta, on apareix una opció anomenada “Configuració de LAM”.
+Un cop hi fem clic, s’obrirà un menú on haurem de seleccionar l’opció “Editar perfils del servidor”.
+
+![](img/image20(2).png)
 ![](img/image20.png)
 
+Ara configurarem el directori. Per això, dins de l’apartat “Preferències del servidor”, introduirem la configuració que es mostra a la imatge següent
 
+![](img/image21.png)
 
+A continuació, a l’apartat “Ajustos d’eines”, aplicarem la configuració següent
+
+![](img/image22.png)
+
+Després configurarem els usuaris i grups, seguint la configuració indicada a la imatge
+
+![](img/image23.png)
+
+Un cop fet això, ja podrem iniciar sessió
+
+![](img/image24.png)
+
+La primera vegada que accedim, el sistema ens demanarà permís per crear les unitats organitzatives (OU) d’usuaris i grups
+
+![](img/image25.png)
+
+Ara crearem un grup. Per fer-ho, anirem al menú superior i seleccionarem “Comptes” i després “Grups”.
+Un cop dins, farem clic a “Crear grup” i introduirem la informació que vulguem afegir.
+
+![](img/image26.png)
+![](img/image27.png)
+![](img/image28.png)
+
+Ara crearem un usuari. Per fer-ho, anirem al menú superior i seleccionarem “Comptes” i després “Usuaris”.
+Un cop dins, farem clic a “Crear usuari” i introduirem la informació que vulguem afegir.
+
+![](img/image29.png)
+![](img/image31.png)
+![](img/image33.png)
+
+Per ultim li posarem una contrasenya als usuaris per fer això anirem a establir contrasenya i en alla posarem la contrasenya q volguem
+
+![](img/image34.png)
+
+#INTEGRACIÓ CLIENT
 
 
 
