@@ -114,7 +114,7 @@ Per ultim li posarem una contrasenya als usuaris per fer això anirem a establir
 
 ![](img/image34.png)
 
-#INTEGRACIÓ CLIENT
+# INTEGRACIÓ CLIENT
 
 
 
