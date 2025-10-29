@@ -61,6 +61,10 @@ Aqui posarem la comanda de ldapsearch -xLLL -b "dc=innovatech09,dc=test" uid=* s
 
 ![](img/image17.png)
 
+
+
+
+
 # LDAP ACCOUNT MANAGER
 Primer de tot instal.larem el paquet del gestor LDAP account manager
 
