@@ -66,5 +66,16 @@ Primer de tot instal.larem el paquet del gestor LDAP account manager
 
 ![](img/image18.png)
 
+Si escrivim al navegador http://(la nostra IP)/lam, accedirem a la pàgina principal de LAM, on podrem iniciar sessió.
+
+![](img/image19.png)
+
+El primer que configurem sera el LAM, per això anirem adalt a la detra, que ens sortira una opcio q diu configuracio de lam, una vegada hem clicat ens sortira un menu, en alla elegirem la opcio de editar perfiles del servidor
+![](img/image20.png)
+
+
+
+
+
 
 
