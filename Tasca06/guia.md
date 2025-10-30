@@ -1,4 +1,5 @@
 # Anàlisi de Consultes DNS
+---
 ## Configuració
 Primer configurarem els adaptadors de xarxa.  
 Posarem el **Adaptador 1** en mode **NAT** i el **Adaptador 2** en mode **Adaptador pont**.
