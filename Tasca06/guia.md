@@ -82,3 +82,4 @@ La resposta és vàlida per connectar-se al lloc, però no és oficial.
 
 ![](img/image5.png)
 
+
