@@ -1,4 +1,11 @@
 # Anàlisi de Consultes DNS
+## Configuració
+Primer configurarem els adaptadors de xarxa.  
+Posarem el **Adaptador 1** en mode **NAT** i el **Adaptador 2** en mode **Només amfitrió (Host-Only)**.
+
+
+![Adaptador1](img/image7.png)
+![Adaptador2](img/image8.png)
 
 ---
 
