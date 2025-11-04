@@ -157,3 +157,44 @@ Per assignar una contrasenya als usuaris:
 ![Establir contrasenya](img/image34.png)<br><br><br><br><br><br><br><br><br>
 
 # INTEGRACIÓ CLIENT
+Primer de tot entrerem en el directori de /etc/hosts amb sudo nano i en la IP 127.0.1.1 posarem el domini del client i en la IP del nostre servidor, es a dir, la IP 192.168.56.101 posarem el domini del servidor
+
+![](img/image35.png)
+
+Per comprobar-ho posarem la comanda de hostname -f i ens ahuria de sortir el domini del client q hem posat abans y si posem dig(domini del servidor) ens ahuria de sortir informacio sobre aquesta.
+
+![](img/image36.png)
+
+Ara instal.larem moduls per utilitza libmap i nss, per això escriurem la comanda de  apt install libnss-ldap libpam-ldap ldap-utils nscd -y, y despres seguirem els pasos de la instal.lacvió
+
+![](img/image37.png)
+![](img/image38.png)
+![](img/image39.png)
+![](img/image40.png)
+![](img/image41.png)
+![](img/image42.png)
+![](img/image43.png)
+
+Ara ho comprobarem amb ldapsearch, aixo amb la comanda de ldapsearch -x -D 'cn=admin,dc=innovatech09,dc=test' -W -H ldap://server.waytoit.test -b 'dc=innovatech09,dc=test' objectClass=posixAccount uid 
+
+![](img/image44.png)
+
+Ara configurarem el archiu nsswitch.conf, per aixo entrem al directori de /etc/nsswitch.conf amb sudo nano i afagirem el ldap a les tres primeres lineas.
+
+![](img/image45.png)
+
+Ara editerem el archiu de /etc/pam.d/common-password i eliminarem la linia del terme use_authtok
+
+![](img/image46.png)
+
+Ara editerem el archiu de /etc/pam.d/common-session i afegim una linea per crear els perfils
+
+![](img/image47.png)
+
+Ara reiniciarem el servei amb systemctl restart ncsd i comprovarem que veu els usuaris amb getent passwd | tail
+
+![](img/image48.png)
+
+Ara entrarem al archiu de /etc/pam.d/gdm-launch-environment i afegirem la primera linea
+
+![](img/image49.png)
