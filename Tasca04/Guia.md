@@ -295,3 +295,5 @@ I per saber la creació automàtica de la carpeta personal posarem:
 ```bash
 id
 ```
+
+![](img/image51.png)
