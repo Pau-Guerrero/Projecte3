@@ -200,7 +200,7 @@ sudo apt install libnss-ldap libpam-ldap ldap-utils nscd -y
 
 Seguidament, seguim els passos que apareixeran durant la instal·lació.
 
-![](img/image37.png)
+![](img/image52.png)
 ![](img/image38.png)
 ![](img/image39.png)
 ![](img/image40.png)
@@ -283,3 +283,15 @@ I afegim la primera línia necessària per la configuració.
 
 ![](img/image49.png)
 
+
+### Prova d'accès final
+
+Iniciem sessió amb la conta que vem crear amb el account manager LAM
+
+![](img/image50.png)
+
+I per saber la creació automàtica de la carpeta personal posarem:
+
+```bash
+id
+```
