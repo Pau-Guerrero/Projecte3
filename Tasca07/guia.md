@@ -4,9 +4,9 @@
 
 Primer de tot he posat 4 GB de RAM
 
-![](img/image01)
+![](img/image01.png)
 
 Despres he configurat els dos adaptadors, he deixat el primer en NAT i el segon le posat en adaptador pont
 
-![](img/image02)
-![](img/image03)
+![](img/image02.png)
+![](img/image03.png)
