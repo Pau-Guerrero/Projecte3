@@ -14,7 +14,7 @@ Despres he configurat els dos adaptadors, he deixat el primer en NAT i el segon 
 ## Configuració de previes servidor
 Per configurar entrerem en el arxiu de:
 ```bash
-sudo nano /etc/netplan/50-cloud.conf
+sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Després posarem manualment la configuració DNS.
