@@ -8,6 +8,7 @@ Primer de tot he posat 4 GB de RAM
 
 Despres he configurat els dos adaptadors, he deixat el primer en NAT i el segon le posat en adaptador pont
 
-
+![](img/image06.png)
+![](img/image07.png)
 
 ## Configuració de previes servidor
