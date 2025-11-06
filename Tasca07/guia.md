@@ -19,4 +19,4 @@ sudo nano /etc/netplan/50-cloud-init.yaml
 
 Després posarem manualment la configuració DNS.
 
-![](img/image08.png)
+![](img/image09.png)
