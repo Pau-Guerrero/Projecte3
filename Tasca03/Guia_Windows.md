@@ -21,6 +21,8 @@ Per a aquesta pràctica s’utilitza **Windows 11** per demostrar les configurac
 - **Demostració de la gestió:**  
   Visualització de l’estat dels discos i del pool des de la consola de Windows.
 
+![](img/img_Windows/image01.png)
+
 ---
 
 ## 1. Administrar discos
@@ -28,7 +30,8 @@ Per a aquesta pràctica s’utilitza **Windows 11** per demostrar les configurac
 Es gestionen els tres discos simulats de 10 GB (1, 2 i 3) prèviament creats.  
 S’utilitza el tipus de partició **MBR (Registre d’arrencada mestre)** per a cadascun dels discos.
 
-! [](img/img_Windows)
+![](img/img_Windows/image02.png)
+
 ---
 
 ## 2. Resiliència de mirall
@@ -43,6 +46,9 @@ Aquesta configuració permet mantenir una **alta disponibilitat de les dades**, 
 - Capacitat màxima: 10 GB  
 - Capacitat total del pool: 18,7 GB
 
+![](img/img_Windows/image03.png)
+![](img/img_Windows/image04.png)
+
 ---
 
 ## 3. Resiliència de paritat
@@ -50,6 +56,11 @@ Aquesta configuració permet mantenir una **alta disponibilitat de les dades**, 
 Es crea un nou espai d’emmagatzematge amb **resiliència de paritat**, afegint-hi una unitat addicional de 10 GB per millorar la distribució de les dades dins del grup.  
 
 Aquesta configuració és més **eficient en l’ús de l’espai**, ja que només una part es destina a la informació de paritat, i la resta a dades útils.
+
+![](img/img_Windows/image05.png)
+![](img/img_Windows/image06.png)
+![](img/img_Windows/image07.png)
+![](img/img_Windows/image08.png)
 
 ---
 
@@ -65,3 +76,6 @@ Aquesta opció ofereix un **nivell superior de protecció**, ja que permet resis
 - Possibilitat de fallada de dos discos sense pèrdua de dades.  
 - Més seguretat per a entorns crítics.
 
+![](img/img_Windows/image09.png)
+![](img/img_Windows/image10.png)
+![](img/img_Windows/image11.png)
