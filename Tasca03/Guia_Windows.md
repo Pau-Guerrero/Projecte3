@@ -28,6 +28,7 @@ Per a aquesta pràctica s’utilitza **Windows 11** per demostrar les configurac
 Es gestionen els tres discos simulats de 10 GB (1, 2 i 3) prèviament creats.  
 S’utilitza el tipus de partició **MBR (Registre d’arrencada mestre)** per a cadascun dels discos.
 
+! [](img/img_Windows)
 ---
 
 ## 2. Resiliència de mirall
