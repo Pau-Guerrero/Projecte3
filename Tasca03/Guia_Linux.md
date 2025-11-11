@@ -118,7 +118,7 @@ En aquesta comanda usem -s per indicar que es un snapshot.
 Per veure els LV que tenim creats i com la còpia apunta al original usarem la comanda:
 lvs volgrup
 
-
+![](img/img_Linux/image14.png)
 
 Si volem veure el contingut que té aquesta còpia muntarem el LV per poder veure el contingut que té dins. Per fer-ho crearem una nova carpeta i seguidament muntarem el volum a aquesta
 mkdir /mnt/copia
@@ -126,6 +126,6 @@ mount /dev/volgrup/copialv01 /mnt/copia
 
 Ara podem veure el contingut que té dins amb la comanda ls /mnt/copia
 
-
+![](img/img_Linux/image15.png)
 
 Ara ja tindrem creada la snapshot.
