@@ -1,26 +1,46 @@
 # Configuració de la Màquina Virtual
 
-Per configurar la màquina virtual, he assignat **4096 MB de RAM**:
+Per començar la instal·lació i configuració del servidor, hem de preparar correctament la màquina virtual. En aquest cas, he assignat 4096 MB de RAM per assegurar un rendiment estable durant el funcionament dels serveis LDAP i LAM. Aquesta quantitat de memòria és suficient per a entorns de prova o petites implementacions.
 
 ![Configuració de RAM](img/image1.png) <br><br><br>
 
 ## Configuració de Xarxa
 
-- **Primer adaptador:** Xarxa NAT  
+- Per permetre la comunicació entre el servidor i els clients, configurarem dos adaptadors de xarxa:
+Primer adaptador: configurat en Xarxa NAT, permet que la màquina virtual tingui accés a Internet per descarregar paquets i actualitzacions.
   ![Primer adaptador](img/image2.png)
 
-- **Segon adaptador:** Adaptador de només l’amfitrió  
+- Segon adaptador: configurat com a Adaptador de només l’amfitrió (Host-Only Adapter), permet la comunicació directa entre la màquina host i la màquina virtual, sense passar per Internet. Això és útil per a proves de connexió LDAP i accés des de clients locals.
   ![Segon adaptador](img/image3.png)<br><br><br>
 
 ## Configuració de Netplan
 
-Entrarem a l’arxiu `/etc/netplan/50-cloud-init.yaml` amb `sudo nano` i posarem la següent configuració:
+Un cop configurada la xarxa virtual, cal definir la configuració IP dins del sistema operatiu de la màquina virtual.
+
+Accedim a l’arxiu de configuració de xarxa amb:
+
+```bash
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+Allà hi introduirem la configuració que estableix l’adreça IP estàtica, la passarel·la i els DNS corresponents. D’aquesta manera, el servidor sempre utilitzarà la mateixa IP dins de la xarxa host-only, evitant conflictes o canvis d’adreça.
 
 ![Netplan](img/image4.png)<br><br><br>
 
 ## Configuració del Domini
 
-Per configurar el domini, obrirem l’arxiu `/etc/hosts` amb `sudo nano` i modificarem el domini que està després del `127.0.1.1`:
+Finalment, configurarem el domini local que identificarà el nostre servidor dins de la xarxa.
+
+Obrim el fitxer /etc/hosts amb:
+```bash
+sudo nano /etc/hosts
+```
+A continuació, modifiquem la línia que comença amb 127.0.1.1, substituint el nom per defecte per un nom de domini personalitzat. Això permetrà identificar el servidor LDAP pel seu domini en lloc de la seva IP.
+
+Per exemple, podem utilitzar:
+```bash
+127.0.1.1   server.innovatech09.test   server
+```
 
 ![Hosts 1](img/image5.png)  
 ![Hosts 2](img/image6.png)  
@@ -29,19 +49,24 @@ Per configurar el domini, obrirem l’arxiu `/etc/hosts` amb `sudo nano` i modif
 
 # Instal·lació i Configuració d’OpenLDAP
 
-Per instal·lar OpenLDAP, primer ens posem com a **root** amb:
+Abans de començar, és recomanable actualitzar els repositoris del sistema per assegurar que descarreguem la versió més recent dels paquets:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
 
+Després, ens situem com a usuari root per tenir tots els permisos necessaris durant la instal·lació:
 ```bash
 sudo su
 ```
-Després, instal·lem OpenLDAP i les utilitats necessàries:
+
+Instal·lem els paquets principals d’OpenLDAP i les seves utilitats de gestió:
 ```bash
 apt install slapd ldap-utils -y
 ```
 
 ![](img/image8.png)
 
-Durant la instal·lació, apareixerà aquesta finestra per introduir la contrasenya de l’usuari administrador:
+Durant el procés d’instal·lació, el sistema ens demanarà definir una contrasenya per a l’usuari administrador de LDAP (cn=admin). Aquesta contrasenya és essencial, ja que ens permetrà accedir posteriorment al directori per crear i modificar usuaris i grups.
 
 ![](img/image9.png)
 
@@ -61,10 +86,13 @@ dpkg-reconfigure slapd
 ![](img/image11.png)
 ![](img/image12.png)
 
-Per comprovar que la configuració s’ha aplicat correctament:
+Un cop finalitzat el procés, el servei s’actualitzarà automàticament amb la nova configuració del domini.
+
+Per comprovar que el directori LDAP s’ha creat correctament, executem:
 ```bash
 slapcat
 ```
+Això confirma que el domini s’ha aplicat correctament i que el servei està preparat per gestionar usuaris i grups.
 ![](img/image13.png)<br><br><br><br><br><br><br><br><br>
 
 
@@ -74,6 +102,9 @@ slapcat
 ## 1. Instal·lació
 
 Primer, instal·lem el paquet del gestor **LDAP Account Manager**:
+```bash
+sudo apt install ldap-account-manager -y
+```
 
 ![Instal·lació LAM](img/image18.png)
 
@@ -89,23 +120,31 @@ Això ens portarà a la pàgina principal on podrem iniciar sessió:
 
 ## 2. Configuració inicial de LAM
 
-Abans d’iniciar sessió, hem de configurar LAM:
+Abans d’iniciar sessió com a administrador LDAP, hem de configurar els paràmetres del servidor dins de LAM.
 
-1. Anem a la part superior dreta i fem clic a **"Configuració de LAM"**.
-2. Seleccionem **"Editar perfils del servidor"**:
+- A la part superior dreta, fem clic a “Configuració de LAM”.
+
+- A continuació, seleccionem “Editar perfils del servidor” per obrir la configuració del nostre entorn LDAP.
 
 ![Editar perfils 1](img/image20(2).png)  
 ![Editar perfils 2](img/image20.png)
 
 ### Configuració del directori
 
-Dins **"Preferències del servidor"**, introduïm la configuració indicada:
+A l’apartat “Preferències del servidor”, indiquem la informació del nostre servidor LDAP.
+Cal especificar:
+
+- Servidor LDAP: per exemple, ldap://server.innovatech09.test
+
+- Base DN: dc=innovatech09,dc=test
+
+- Usuari administrador (DN): cn=admin,dc=innovatech09,dc=test
 
 ![Preferències del servidor](img/image21.png)
 
 ### Ajustos d’eines
 
-A l’apartat **"Ajustos d’eines"**, apliquem la configuració mostrada:
+A continuació, a l’apartat “Ajustos d’eines”, configurem les opcions de comportament de LAM, com el llenguatge per defecte, els formats d’usuari i la manera en què es mostraran els grups i unitats organitzatives.
 
 ![Ajustos d’eines](img/image22.png)
 
@@ -127,8 +166,13 @@ Un cop fet això, ja podem iniciar sessió:
 
 ## 3. Creació de grups
 
-1. Anem al menú superior i seleccionem **"Comptes" > "Grups"**.
-2. Fem clic a **"Crear grup"** i introduïm la informació desitjada:
+Un cop dins de LAM, podem començar a administrar el directori. El primer pas recomanat és crear els grups, ja que després podrem assignar-hi els usuaris.
+
+- Al menú superior, seleccionem “Comptes” → “Grups”.
+
+- Fem clic a “Crear grup” i introduïm la informació corresponent, com el nom del grup i el seu identificador únic (GID).
+
+- Guardem els canvis i verifiquem que el grup aparegui correctament a la llista.
 
 ![Crear grup 1](img/image26.png)  
 ![Crear grup 2](img/image27.png)  
@@ -138,8 +182,11 @@ Un cop fet això, ja podem iniciar sessió:
 
 ## 4. Creació d’usuaris
 
-1. Anem al menú superior i seleccionem **"Comptes" > "Usuaris"**.
-2. Fem clic a **"Crear usuari"** i introduïm la informació necessària:
+Després d’haver creat els grups, el següent pas és afegir els usuaris al directori LDAP. LAM permet fer-ho de manera visual, evitant l’ús directe de comandes LDAP i minimitzant errors en la configuració manual.
+
+- Al menú superior, seleccionem “Comptes” → “Usuaris”.
+
+- Fem clic a “Crear usuari” i omplim els camps obligatoris
 
 ![Crear usuari 1](img/image29.png)  
 ![Crear usuari 2](img/image31.png)  
@@ -149,25 +196,31 @@ Un cop fet això, ja podem iniciar sessió:
 
 ## 5. Assignar contrasenya
 
-Per assignar una contrasenya als usuaris:
+Un cop creats els usuaris, el següent pas és establir la contrasenya per poder iniciar sessió i autenticar-se al directori LDAP.
 
-1. Anem a **"Establir contrasenya"**.
-2. Introduïm la contrasenya que vulguem:
+- A LAM, anem al menú superior i seleccionem “Establir contrasenya”.
+
+- Triem l’usuari al qual volem assignar la contrasenya i introduïm la contrasenya desitjada.
+
+- Confirmem la contrasenya i guardem els canvis.
 
 ![Establir contrasenya](img/image34.png)<br><br><br><br><br><br><br><br><br>
 
 # INTEGRACIÓ CLIENT
 ### Editar el fitxer `/etc/hosts`
 
-Primer, entrem al directori i editem el fitxer:
-
+Obrim el fitxer amb permisos d’administrador:
 ```bash
 sudo nano /etc/hosts
 ```
 
-A la IP 127.0.1.1, escrivim el domini del client.
+Afegim les següents línies:
 
-A la IP del servidor (192.168.56.101), escrivim el domini del servidor.
+127.0.1.1 → domini del client, per exemple client1.innovatech09.test.
+
+192.168.56.101 → IP del servidor LDAP, amb el seu domini corresponent, per exemple server.innovatech09.test.
+
+Aquesta configuració permet que el client resolgui el servidor per nom de domini i no només per IP, facilitant l’autenticació i la gestió centralitzada.
 
 ![](img/image35.png)
 
