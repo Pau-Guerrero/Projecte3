@@ -1,4 +1,4 @@
-# INFORGRAFIA
+# INFOGRAFIA
 
 Aquesta tasca consisteix a crear una infografia ASG (Ambiental, Social i de Governança) per a EverPia, amb l’objectiu de mostrar el seu compromís amb la sostenibilitat i la responsabilitat empresarial.
 
